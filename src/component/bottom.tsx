@@ -15,8 +15,10 @@ export const Button = (props: ButtonProps) => {
       className={`bg-[#242424] flex justify-center hover:bg-[#333333] text-[#e3e3e3] rounded p-3 px- ${props.width ? props.width : 'w-full'} font-medium ease-linear transition duration-200`}
     >
       <div className="flex gap-4">
-        {props.icon}
-        <p>{props.children}</p>
+        <div>{props.icon}</div>
+        <div>
+          <p>{props.children}</p>
+        </div>
       </div>
     </button>
   )

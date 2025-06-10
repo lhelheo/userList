@@ -67,13 +67,13 @@ export default function ProductPage(props: ProductPageProps) {
 
               <DetailItem
                 icon={DollarSign}
-                value={product?.price.toFixed(2) || 'N/A'}
+                value={product?.price?.toFixed(2) || 'N/A'}
                 label="Preço de Venda"
               />
 
               <DetailItem
                 icon={DollarSign}
-                value={product?.cost_price.toFixed(2) || 'N/A'}
+                value={product?.cost_price?.toFixed(2) || 'N/A'}
                 label="Preço de Custo"
               />
 

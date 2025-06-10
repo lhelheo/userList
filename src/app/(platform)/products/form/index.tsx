@@ -55,7 +55,7 @@ export const ProductsForm = (props: ProductsFormProps) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center min-h-screen bg-[#181818] px-20 py-10">
-        <div className="bg-[#181818] border border-gray-500 border-opacity-35 w-full max-h-[700px] shadow-md rounded-lg px-10 py-8">
+        <div className="bg-[#181818] border border-gray-500 border-opacity-35 w-full max-w-[1600px] max-h-[700px] shadow-md rounded-lg px-10 py-8">
           <h1 className="text-2xl font-bold text-[#e3e3e3] mb-6">Produtos</h1>
 
           <div className="mb-6 w-full">

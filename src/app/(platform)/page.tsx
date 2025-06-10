@@ -89,9 +89,8 @@ export default function LoginPage() {
             <div className="relative">
               <button
                 type="submit"
-                className={`px-4 py-3 mt-4 bg-[#242424] hover:bg-[#333333] font-medium text-[#e3e3e3] rounded w-full hover:scale-[101%] ease-linear transition-all ${
-                  loading ? 'opacity-50 cursor-not-allowed' : ''
-                }`}
+                className={`px-4 py-3 mt-4 bg-[#242424] hover:bg-[#333333] font-medium text-[#e3e3e3] rounded w-full hover:scale-[101%] ease-linear transition-all ${loading ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
                 disabled={loading}
               >
                 {loading ? 'Carregando...' : 'Entrar'}

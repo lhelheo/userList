@@ -84,7 +84,7 @@ export default function Clients() {
             </div>
           )}
 
-          <div className="w-full px-10 py-8 bg-[#181818] border border-gray-500 border-opacity-35 shadow-lg rounded-lg max-h-[780px]">
+          <div className="w-full my-auto max-w-[1100px] px-10 py-8 bg-[#181818] border border-gray-500 border-opacity-35 shadow-lg rounded-lg max-h-[780px]">
             <div className="flex justify-between mb-6 w-full items-center">
               <Title title="Clientes" />
               <Button
@@ -108,7 +108,7 @@ export default function Clients() {
             ) : filteredCustomers.length === 0 ? (
               <p className="text-[#e3e3e3]">Nenhum cliente encontrado</p>
             ) : (
-              <div className="max-h-[500px] overflow-y-auto">
+              <div className="max-h-[300px] overflow-y-auto">
                 <CustomTable
                   columns={[
                     { key: 'name', label: 'Nome' },

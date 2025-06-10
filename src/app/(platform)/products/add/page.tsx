@@ -95,7 +95,7 @@ export default function CreateProduct() {
       <h1 className="text-3xl font-bold text-[#e3e3e3] mb-6 text-center">
         Adicionar Produto
       </h1>
-      <div className="bg-[#242424] shadow-lg rounded-lg px-10 py-8 max-w-[1200px] w-full  ">
+      <div className="bg-[#181818] border border-gray-600 shadow-lg rounded-lg px-10 py-8 max-w-[1200px] w-full  ">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div>
@@ -113,7 +113,7 @@ export default function CreateProduct() {
                     e.target.value ? Number(e.target.value) : null,
                   )
                 }
-                className="rounded-lg w-full p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
               >
                 <option value="">Nenhum cliente associado</option>
                 {clients.map((client) => (
@@ -135,7 +135,7 @@ export default function CreateProduct() {
                 id="status"
                 ref={statusRef}
                 required
-                className="w-full rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
               >
                 <option value="Disponivel">Disponível</option>
                 <option value="Vendido">Vendido</option>
@@ -156,7 +156,7 @@ export default function CreateProduct() {
                 id="productName"
                 ref={productNameRef}
                 type="text"
-                className="w-full rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
                 required
               />
             </div>
@@ -172,7 +172,7 @@ export default function CreateProduct() {
                 id="productCode"
                 ref={productCodeRef}
                 type="text"
-                className=" w-full  rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
                 required
               />
             </div>
@@ -188,7 +188,7 @@ export default function CreateProduct() {
                 id="productPrice"
                 ref={productPriceRef}
                 type="number"
-                className=" w-full  focus:outline-none focus:ring-2 focus:ring-[#181818] rounded-lg p-3 text-[#e3e3e3] bg-[#181818] "
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
                 step="0.01"
                 required
               />
@@ -205,7 +205,7 @@ export default function CreateProduct() {
                 id="costPrice"
                 ref={costPriceRef}
                 type="number"
-                className=" w-full  rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
                 step="0.01"
                 required
               />
@@ -222,7 +222,7 @@ export default function CreateProduct() {
                 id="supplier"
                 ref={supplierRef}
                 type="text"
-                className=" w-full  rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
               />
             </div>
 
@@ -237,7 +237,7 @@ export default function CreateProduct() {
                 id="description"
                 ref={descriptionRef}
                 type="text"
-                className=" w-full  rounded-lg p-3 text-[#e3e3e3] bg-[#181818] focus:outline-none focus:ring-2 focus:ring-[#181818]"
+                className="p-3 rounded bg-[#242424] text-[#e3e3e3] shadow focus:outline-none w-full border border-gray-500 border-opacity-35"
                 required
               />
             </div>
@@ -245,7 +245,7 @@ export default function CreateProduct() {
 
           <button
             type="submit"
-            className="bg-[#181818] hover:bg-[#1f1f1f] text-[#e3e3e3] rounded-lg py-3 mt-4 ease-linear transition-all focus:ring-4 focus:ring-[#181818] disabled:bg-[#181818]"
+            className="w-full p-3 bg-[#242424]  hover:bg-[#333333] font-medium text-white rounded transition-all ease-linear hover:scale-[101%]"
             disabled={loading}
           >
             {loading ? 'Carregando...' : 'Salvar'}
